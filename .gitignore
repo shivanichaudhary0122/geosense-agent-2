@@ -1,0 +1,58 @@
+# Credentials and environment files
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# IDE settings
+.idea/
+
+# Raw data and downloaded datasets
+data/raw/
+data/shapefiles/
+data/satellite/
+
+# Large processed datasets
+data/processed/bhubaneswar/chips_256/
+data/processed/bhubaneswar/lab_chips_224/
+data/processed/bhubaneswar/unet_dataset/
+
+# Model weights and caches
+models/pretrained_prithvi/
+models/prithvi_baseline/
+models/prithvi_finetune/
+models/unet_baseline/
+models/saved/
+*.pt
+*.pth
+*.pkl
+
+# Phase 2 and later phases
+src/phase2_dl/
+src/phase3_lidar/
+src/phase4_agent/
+align_preprocess_sentinel2.py
+plot_prithvi_results.py
+run_phase2.ps1
+train_prithvi_finetune.py
+train_prithvi_head.py
+train_prithvi_head_backup.py
+validate_sentinel2.py
+diagnose_results.txt
+
+# Sentinel-2 imagery - exclude from Phase 1 upload
+data/processed/bhubaneswar/sentinel2_*.tif
+
+# Phase 2 model outputs
+outputs/prithvi_baseline/
+outputs/prithvi_finetune/
+outputs/unet_baseline/
+
+# All downloaded satellite arrays and derived satellite data
+data/satellite/clean/
+
+# Additional downloaded source datasets
+data/shapefiles/
